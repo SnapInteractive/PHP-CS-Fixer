@@ -30,7 +30,7 @@ class ControlSpacesFixer implements FixerInterface
         $content = $this->fixControlsWithPrefixBraceAndSuffixBrace($content);
         $content = $this->fixControlsWithPrefixBraceAndParenthesesAndSuffixBrace($content);
         $content = $this->fixControlsWithPrefixBraceAndParenthesesAndSuffixBraceInLambdas($content);
-        $content = $this->fixCasts($content);
+        //$content = $this->fixCasts($content);
 
         return $content;
     }
